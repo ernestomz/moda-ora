@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Roboto:wght@400;900&display=swap');
+
+:root {
+    --background-top-header: #162028;
+    --text-menu: #425564;
+    --color-text: #555;
+    --color-box-image: #003d52;
+    --color-footer: #0b171f;
+    --color-text-footer: #6f8597;
+}
+
+html, body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0em;
+}
+
+body {
+    background-image: url(imagens/passagens-aereas-paris-capa2019-02.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header {
+    display: flex;
+    margin: 0 0 45em;
+    padding: 0;
+    justify-content: space-between;
+    background-color: transparent;
+    
+}
+
+.header__logo {
+    font-family: "Belleza", sans-serif;
+    font-weight: lighter;
+    color: white;
+    padding: 0 2em 0 2em;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.header__navegation ul {
+    display: flex;
+    list-style-type: none;
+    gap: 4em;
+}
+
+.header__navegation li {
+    padding: 1em 2em 1em 2em;
+}
+
+.header__navegation a {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    transition: all .3s;
+}
+
+.header__navegation a:hover {
+    border-bottom: 3px solid white;
+    color: yellow;
+}
+
+.main__title {
+    text-align: center;
+    font-family: "Belleza", sans-serif;
+    font-weight: lighter;
+    font-size: 3em;
+    margin-bottom: 1.5em;
+}
+
+.main__description {
+    text-align: center;
+    color: var(--color-text);
+    font-family: "Roboto", sans-serif;
+    margin: 0 10em 5em 10em;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.main__imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__imagens--models {
+    padding-right: 3em;
+}
+
+.main__imagens--models img {
+    min-width: 23em;
+    box-shadow: 1em .5em 1em var(--color-box-image);
+}
+
+.main__imagens--models h2 {
+    text-align: center;
+    font-family: "Belleza", sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+.main__imagens--models p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    color: var(--color-text);
+}
+
+footer {
+    background-image: url(imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0.1em;
+}
+
+.footer__tittle {
+    color: white;
+    text-align: left;
+    padding: 4em 3em .5em 2em;
+    font-size: 3.5em;
+    font-family: "Belleza", sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.footer__description {
+    text-align: left;
+    color: white;
+    margin: 0 20em 10em 5em;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4em;
+    line-height: 2em;
+}
+
+.footer__rodape {
+    color: var(--color-text-footer);
+    text-align: center;
+    background-color: var(--color-footer);
+    padding: 2em 0 2em 0;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3em;
+    letter-spacing: .3em;
+}
